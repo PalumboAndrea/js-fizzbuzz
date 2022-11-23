@@ -29,15 +29,23 @@ for (let i=1; i<=100; i++){
     if ((i % 3 === 0) && (i % 5 === 0)){
         el.innerHTML += "FizzBuzz";
         el.style.color = 'red';
+        el.style.boxShadow = '0px 0px 0px 5px red inset';
+        el.style.border = '1px solid black'
     } else if (i % 5 === 0){
         el.innerHTML += 'Buzz';
         el.style.color = 'blue';
+        el.style.boxShadow = '0px 0px 0px 5px blue inset';
+        el.style.border = '1px solid black'
     } else if (i % 3 === 0){
         el.innerHTML += 'Fizz';
         el.style.color = 'green';
+        el.style.boxShadow = '0px 0px 0px 5px green inset';
+        el.style.border = '1px solid black'
     } else {
         el.innerHTML += i;
         el.style.color = 'orange';
+        el.style.boxShadow = '0px 0px 0px 5px orange inset';
+        el.style.border = '1px solid black'
     }
 
 }
